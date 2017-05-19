@@ -33,7 +33,7 @@ class ApplicationController < ActionController::Base
 
   layout 'base'
 
-  protect_from_forgery with: :null_session
+  protect_from_forgery
 
   def verify_authenticity_token
     unless api_request?
